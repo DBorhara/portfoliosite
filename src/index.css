@@ -37,3 +37,30 @@ code {
   font-size: 16px;
   margin: 0px;
 }
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+.techimg {
+  max-width: 15vh;
+  max-height: 15vh;
+}
+
+.centerText {
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 10vh;
+  display: 4;
+  font-weight: bold;
+}
+
+span {
+  padding: 10px;
+}

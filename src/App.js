@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  NavLink,
-  Link,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import './App.css';
 
@@ -32,7 +27,7 @@ class App extends Component {
         title: 'About Me',
       },
       contact: {
-        title: 'Engineer Looks For A Place To Call Home',
+        title: "Let's Chat",
       },
     };
   }
@@ -72,11 +67,11 @@ class App extends Component {
           />
           <Route
             path="/about"
-            render={() => <AboutPage title={this.state.home.title} />}
+            render={() => <AboutPage title={this.state.about.title} />}
           />
           <Route
             path="/contact"
-            render={() => <ContactPage title={this.state.home.title} />}
+            render={() => <ContactPage title={this.state.contact.title} />}
           />
 
           <Footer />
