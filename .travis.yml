@@ -1,19 +1,1 @@
 language: node_js
-node_js:
-  - node # uses most recent stable node version
-dist: trusty # uses trusty environment
-sudo: false # when on trusty, uses Docker containers for speed
-notifications:
-  email:
-    on_success: change # default: change (only when going from broken to fixed)
-    on_failure: always # default: always (which is annoying, as it should be)
-install:
-  - npm ci # faster, goes only from package-lock
-before_deploy: # omit node_modules, since we set skip_cleanup below
-  - rm -rf node_modules
-deploy: # see README for details on these keys
-  # prevents travis from deleting the build
-  skip_cleanup: true
-  provider: firebase
-  # app should be your heroku app name; see README
-  app: personalproject-63690.firebaseapp.com
