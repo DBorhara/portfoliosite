@@ -27,7 +27,7 @@ function AboutPage(props) {
         {<br />}
         {<br />}
         When I am not coding, I like to spend time with my wife, daughter, 2
-        dogs, and cat. I also am an avid snowboarder, and driving range golfer,
+        dogs, and cat. I also am an avid snowboarder,driving range golfer,
         and coffee enthusiast. I have also developed a new found respect and
         passion for learning algorithms, particularly heaps/priority queues and
         graph traversal. <strong>(Dijkstra's Shortest Path Algo 4 Lyfe)</strong>
