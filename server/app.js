@@ -22,9 +22,7 @@ app.get('/api', (req, res, next) => {
 });
 
 app.post('/api/email', (req, res, next) => {
-  sgMail.setApiKey(
-    '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'
-  );
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const msg = {
     to: 'depakborhara@gmail.com',
