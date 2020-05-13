@@ -24,7 +24,8 @@ class Carousel extends Component {
         {
           id: 1,
           title: '$$$pent',
-          subTitle: 'A personal expense tracker using D3.js',
+          subTitle:
+            'A personal expense tracker using D3.js, javascript, html, and css',
           imgSrc: spent,
           link: 'https://budgettracker-76199.firebaseapp.com/',
           selected: false,
@@ -32,7 +33,8 @@ class Carousel extends Component {
         {
           id: 2,
           title: 'Aplier',
-          subTitle: 'Full Stack Academy Capstone',
+          subTitle:
+            'Progessive Web Applicationd designed to connect employers and candidates using GraphQL, React, Express, Node, and PostgresSQL. Produced for mobile view.',
           imgSrc: aplier,
           link: 'http://apliercapstone.us-east-1.elasticbeanstalk.com/',
           selected: false,
