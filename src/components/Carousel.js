@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Card from '../components/Card';
 
-import aboutMe from '../assets/img/aboutMe.jpg';
-import aplier from '../assets/img/aplier.jpg';
-import marvelrelics from '../assets/img/marvelrelics.jpg';
+import spent from '../assets/img/spent.png';
+import aplier from '../assets/img/aplier.png';
+import shivaClothing from '../assets/img/shivaClothing.png';
 import { Row, Container } from 'react-bootstrap';
 
 class Carousel extends Component {
@@ -14,18 +14,19 @@ class Carousel extends Component {
       items: [
         {
           id: 0,
-          title: 'Marvel Relics',
-          subTitle: 'Mock E-Commerce Site',
-          imgSrc: marvelrelics,
-          link: 'https://marvel-relics.herokuapp.com/',
+          title: 'Shiva Clothing',
+          subTitle:
+            'Mock E-Commerce Site using React, Redux, Node.js, Firestore,and SASS ',
+          imgSrc: shivaClothing,
+          link: 'https://shiva-clothing.herokuapp.com/',
           selected: false,
         },
         {
           id: 1,
-          title: 'My Story',
-          subTitle: 'Learn more about my journey',
-          imgSrc: aboutMe,
-          link: '/about',
+          title: '$$$pent',
+          subTitle: 'A personal expense tracker using D3.js',
+          imgSrc: spent,
+          link: 'https://budgettracker-76199.firebaseapp.com/',
           selected: false,
         },
         {
@@ -45,7 +46,7 @@ class Carousel extends Component {
 
     items[id].selected = items[id].selected ? false : true;
 
-    items.forEach(item => {
+    items.forEach((item) => {
       if (item.id !== id) {
         item.selected = false;
       }
@@ -56,12 +57,12 @@ class Carousel extends Component {
     });
   };
 
-  makeItems = items => {
-    return items.map(item => {
+  makeItems = (items) => {
+    return items.map((item) => {
       return (
         <Card
           item={item}
-          click={e => this.handleCardClick(item.id, e)}
+          click={(e) => this.handleCardClick(item.id, e)}
           key={item.id}
         />
       );
