@@ -18,7 +18,7 @@ import redux from '../assets/img/TechnicalImages/redux.png';
 const ImageCarousel = () => {
   return (
     <div>
-      <h1 className="centerText">Technical Skills</h1>
+      <h2 className="centerText">Technical Skills</h2>
       <InfiniteCarousel
         breakpoints={[
           {

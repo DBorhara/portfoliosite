@@ -19,15 +19,15 @@ class App extends Component {
         { title: 'Contact', path: '/contact' },
       ],
       home: {
-        title: 'Engineering Change',
+        title: 'Engineer Change',
         subTitle: 'Always Be Coding',
-        text: 'Check Out My Projects Below',
+        text: 'Click on a project below',
       },
       about: {
         title: 'About Me',
       },
       contact: {
-        title: "Let's Chat",
+        title: "Let's Connect",
       },
     };
   }

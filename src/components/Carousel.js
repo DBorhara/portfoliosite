@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Card from '../components/Card';
 
-import spent from '../assets/img/spent.png';
+import covidity from '../assets/img/covidity.png';
 import aplier from '../assets/img/aplier.png';
 import shivaClothing from '../assets/img/shivaClothing.png';
 import { Row, Container } from 'react-bootstrap';
@@ -23,11 +23,11 @@ class Carousel extends Component {
         },
         {
           id: 1,
-          title: '$$$pent',
+          title: 'Covidity-19',
           subTitle:
-            'A personal expense tracker using D3.js, javascript, html, and css',
-          imgSrc: spent,
-          link: 'https://budgettracker-76199.firebaseapp.com/',
+            'A Covid-19 tracker with external data to globally track the spread of of the virus with charted datapoints ',
+          imgSrc: covidity,
+          link: 'https://covidity-19.herokuapp.com/',
           selected: false,
         },
         {
